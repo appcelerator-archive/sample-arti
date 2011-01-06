@@ -1,4 +1,4 @@
-<img src="http://www.appcelerator.com/wp-content/themes/app/images/ti-logo.png"> AR<sup>ti</sup>  
+<img src="http://developer.appcelerator.com.s3.amazonaws.com/blog/assets/img/arti_logo.png"> AR<sup>ti</sup>  
 ============================
 
 Welcome to the AR<sup>ti</sup> open source project.  Titanium provides
