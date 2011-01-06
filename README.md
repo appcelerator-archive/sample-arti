@@ -1,7 +1,7 @@
-<img src="http://www.appcelerator.com/wp-content/themes/app/images/ti-logo.png"> Appcelerator Titanium Mobile  
+<img src="http://www.appcelerator.com/wp-content/themes/app/images/ti-logo.png"> AR<sup>ti</sup>  
 ============================
 
-Welcome to the Appcelerator Titanium Mobile open source project.  Titanium provides
+Welcome to the AR<sup>ti</sup> open source project.  Titanium provides
 a platform for web developers to build cross-platform, native mobile applications
 using web technologies such as HTML, JavaScript and CSS.
 
@@ -11,9 +11,6 @@ platforms.
 
 Titanium is licensed under the OSI approved Apache Public License (version 2). Please
 see the LICENSE file for specific details.
-
-*[Download Pre-built Titanium](http://www.appcelerator.com/download)*
-
 
 Features
 --------------------
