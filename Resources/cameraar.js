@@ -129,6 +129,7 @@ for (var i = 0; i < locations.length; i++) {
 		} else {
 			Ti.Media.hideCamera();
 			win.fireEvent("winDetail", {id:e.source.id});
+			win.close();
 		}
 	});
 	viewPlace.add(bkgLocView);

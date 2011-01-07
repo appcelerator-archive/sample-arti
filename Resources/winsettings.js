@@ -51,6 +51,15 @@ var lblSelected = Ti.UI.createLabel({
 });
 win.add(lblSelected);
 
+var imgLogoApp = Ti.UI.createImageView({
+	image: "images/appcelerator.png",
+	width: "auto",
+	height: "auto",
+	bottom: 200
+});
+win.add(imgLogoApp);
+
+
 var imgLogo = Ti.UI.createImageView({
 	image: "images/threesphere.png",
 	width: "auto",
@@ -71,7 +80,7 @@ var lblTNA = Ti.UI.createLabel({
 win.add(lblTNA);
 
 var lblLegal = Ti.UI.createLabel({
-	text: "Appcelerator Titanium Platform\n Copyright (c) 2009-2011 by Appcelerator, Inc. All Rights Reserved.\n Licensed under the terms of the Apache Public License\n Please see the LICENSE included with this distribution for details.",
+	text: "Appcelerator Titanium Platform\nCopyright (c) 2009-2011 by Appcelerator, Inc. All Rights Reserved.\nLicensed under the terms of the Apache Public License\nPlease see the LICENSE included with this distribution for details.",
 	width: 280,
 	height: "auto",
 	bottom: 10,
