@@ -19,7 +19,7 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.threesphere.ar</string>
+			<string>com.appcelerator.arti</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb134793934930</string>
@@ -27,7 +27,7 @@
 		</dict>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.threesphere.ar</string>
+	<string>com.appcelerator.arti</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
