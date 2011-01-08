@@ -128,8 +128,8 @@ for (var i = 0; i < locations.length; i++) {
 			win.fireEvent("winDetail", {id:e.source.id});
 		} else {
 			Ti.Media.hideCamera();
-			//win.fireEvent("winDetail", {id:e.source.id});
-			win.close();
+			win.close();			
+			win.fireEvent("winDetail", {id:e.source.id});
 		}
 	});
 	viewPlace.add(bkgLocView);
