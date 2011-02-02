@@ -14,7 +14,7 @@ Ti.include("dates.js");	//This holds date formatting functions for "pretty dates
 //facebook module available to register against. We want to require the
 //user to login prior to seeing any action here
 var facebook = require("ti.facebook");
-	facebook.appid = "134793934930";
+	facebook.appid = "161605913888734";
 	//facebook.permissions = ["places"];
 
 var centerLoc; //This is our center location based on geolocation
