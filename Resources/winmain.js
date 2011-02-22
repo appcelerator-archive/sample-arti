@@ -13,7 +13,7 @@ Ti.include("dates.js");	//This holds date formatting functions for "pretty dates
 //This starts the Facebook module. We instantiate it here to make the
 //facebook module available to register against. We want to require the
 //user to login prior to seeing any action here
-var facebook = require("ti.facebook");
+var facebook = Titanium.Facebook;
 	facebook.appid = "161605913888734";
 	//facebook.permissions = ["places"];
 
@@ -72,23 +72,25 @@ function EnableDisable(enabled) {
 function FacebookResults(searchTerm, searchLbl) {
 	if (facebook.loggedIn) {
 		Ti.API.info(win.distance);
-		facebook.requestWithGraphPath("search",{q:searchTerm,type:"place",center:center,distance:String(win.distance)},function(e){
+		facebook.requestWithGraphPath("search",{q:searchTerm,type:"place",center:center,distance:String(win.distance)},"GET",function(res){
 			var data = [];
-			
+
 			//Ti.API.info(JSON.stringify(e.result));
-			
-			for (var c=0;c<e.result.data.length;c++) {
-				data[c] = {title:e.result.data[c].name, 
-							id: e.result.data[c].id,
-							name:e.result.data[c].name, 
-							lat:e.result.data[c].location.latitude, 
-							lng:e.result.data[c].location.longitude,
-							street:e.result.data[c].location.street,
-							city:e.result.data[c].location.city,
-							state:e.result.data[c].location.state,
-							zip:e.result.data[c].location.zip
-						   };
-			}
+			var e = JSON.parse(res.result);
+			Ti.API.info("Length: "+e.data.length);
+			for (var c=0;c<e.data.length;c++) {
+				Ti.API.info(e.data[c].id);
+			    data[c] = {title:e.data[c].name,
+			    	id: e.data[c].id,
+			        name:e.data[c].name,
+			        lat:e.data[c].location.latitude,
+			        lng:e.data[c].location.longitude,
+			        street:e.data[c].location.street,
+			        city:e.data[c].location.city,
+			        state:e.data[c].location.state,
+			        zip:e.data[c].location.zip
+			     };
+			 }
 			
 			if (data.length != 0) {				
 				var winFbResults = Ti.UI.createWindow({
