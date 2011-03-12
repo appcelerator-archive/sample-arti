@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <deployment-targets>
+        <target device="iphone">true</target>
+    </deployment-targets>
 <id>com.appcelerator.arti</id>
 <name>arti</name>
 <version>1.0</version>
 <publisher>Appcelerator</publisher>
-<url>appcelerator.com</url>
+<url>http://appcelerator.com</url>
 <description>A demo of augmented reality using Appcelerator's Titanium</description>
 <copyright>2011 by Appcelerator</copyright>
 <icon>default_app_logo.png</icon>
